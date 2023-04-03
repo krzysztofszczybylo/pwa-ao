@@ -1,0 +1,211 @@
+[debug] [2023-04-03T16:38:10.241Z] ----------------------------------------------------------------------
+[debug] [2023-04-03T16:38:10.243Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kszyhhu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-03T16:38:10.244Z] CLI Version:   11.25.2
+[debug] [2023-04-03T16:38:10.244Z] Platform:      win32
+[debug] [2023-04-03T16:38:10.244Z] Node Version:  v18.15.0
+[debug] [2023-04-03T16:38:10.245Z] Time:          Mon Apr 03 2023 18:38:10 GMT+0200 (czas środkowoeuropejski letni)
+[debug] [2023-04-03T16:38:10.245Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-03T16:38:10.252Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T16:38:10.253Z] > authorizing via signed-in user (krzysztof.szczybylo01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\kszyhhu\Documents\pwa-ao
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-03T16:40:34.986Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-03T16:40:35.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-03T16:40:35.575Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project taksowapp (Projekt) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-04-03T16:40:39.033Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-03T16:40:39.033Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:40:40.048Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-03T16:40:40.048Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-04-03T16:40:40.049Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-04-03T16:40:40.049Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:40:41.528Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-04-03T16:40:41.528Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-04-03T16:40:51.538Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-03T16:40:51.538Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:40:52.511Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-03T16:40:52.511Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-04-03T16:40:52.516Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/taksowapp [none]
+[debug] [2023-04-03T16:40:52.831Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/taksowapp 200
+[debug] [2023-04-03T16:40:52.831Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/taksowapp {"projectId":"taksowapp","projectNumber":"155077381932","displayName":"Projekt","name":"projects/taksowapp","resources":{"hostingSite":"taksowapp"},"state":"ACTIVE","etag":"1_6f0ec16d-feab-4bab-9a84-60e743f0f645"}
+[debug] [2023-04-03T16:42:18.079Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances databaseId=taksowapp-default-rtdb&validateOnly=true
+[debug] [2023-04-03T16:42:18.079Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2023-04-03T16:42:18.761Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances 200
+[debug] [2023-04-03T16:42:18.761Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances {"name":"projects/155077381932/locations/europe-west1/instances/taksowapp-default-rtdb","project":"projects/155077381932","databaseUrl":"https://taksowapp-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-04-03T16:42:18.763Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances databaseId=taksowapp-default-rtdb
+[debug] [2023-04-03T16:42:18.763Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances {"type":"default_database"}
+[debug] [2023-04-03T16:42:19.675Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances 200
+[debug] [2023-04-03T16:42:19.676Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/taksowapp/locations/europe-west1/instances {"name":"projects/155077381932/locations/europe-west1/instances/taksowapp-default-rtdb","project":"projects/155077381932","databaseUrl":"https://taksowapp-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-04-03T16:42:26.677Z] >>> [apiv2][query] GET https://taksowapp-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-04-03T16:42:27.800Z] <<< [apiv2][status] GET https://taksowapp-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-04-03T16:42:27.800Z] <<< [apiv2][body] GET https://taksowapp-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for taksowapp-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-04-03T16:42:27.804Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firestore.googleapis.com [none]
+[debug] [2023-04-03T16:42:27.804Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firestore.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:28.767Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firestore.googleapis.com 200
+[debug] [2023-04-03T16:42:28.767Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/firestore.googleapis.com [omitted]
+[debug] [2023-04-03T16:42:28.767Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default) [none]
+[debug] [2023-04-03T16:42:29.012Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default) 200
+[debug] [2023-04-03T16:42:29.012Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default) {"name":"projects/taksowapp/databases/(default)","uid":"f14039c4-587d-4c46-85ff-dd2a1edd9ab2","createTime":"2023-03-28T09:51:31.531641Z","updateTime":"2023-03-28T09:51:31.531641Z","locationId":"eur3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"e","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJjljvWTjv4CMPac46Hui/4C"}
+[debug] [2023-04-03T16:42:29.012Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-04-03T16:42:29.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T16:42:29.013Z] > authorizing via signed-in user (krzysztof.szczybylo01@gmail.com)
+[debug] [2023-04-03T16:42:29.013Z] [iam] checking project taksowapp for permissions ["firebase.projects.get"]
+[debug] [2023-04-03T16:42:29.014Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions [none]
+[debug] [2023-04-03T16:42:29.014Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:29.014Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-03T16:42:29.818Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions 200
+[debug] [2023-04-03T16:42:29.819Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-03T16:42:39.099Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/releases pageSize=10&pageToken=
+[debug] [2023-04-03T16:42:39.980Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/releases 200
+[debug] [2023-04-03T16:42:39.980Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/releases {"releases":[{"name":"projects/taksowapp/releases/cloud.firestore","rulesetName":"projects/taksowapp/rulesets/f657f4fb-5704-455b-bf0c-be318458bdee","createTime":"2023-03-28T09:51:36.750971Z","updateTime":"2023-03-28T09:51:36.750971Z"}]}
+[debug] [2023-04-03T16:42:39.981Z] Found ruleset: projects/taksowapp/rulesets/f657f4fb-5704-455b-bf0c-be318458bdee
+[debug] [2023-04-03T16:42:39.981Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/rulesets/f657f4fb-5704-455b-bf0c-be318458bdee [none]
+[debug] [2023-04-03T16:42:40.840Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/rulesets/f657f4fb-5704-455b-bf0c-be318458bdee 200
+[debug] [2023-04-03T16:42:40.840Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/taksowapp/rulesets/f657f4fb-5704-455b-bf0c-be318458bdee [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-03T16:42:42.703Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-04-03T16:42:42.705Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-04-03T16:42:42.970Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-04-03T16:42:42.970Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-04-03T16:42:42.971Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-04-03T16:42:42.971Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/taksowapp/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/taksowapp/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-04-03T16:42:42.972Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T16:42:42.973Z] > authorizing via signed-in user (krzysztof.szczybylo01@gmail.com)
+[debug] [2023-04-03T16:42:42.973Z] [iam] checking project taksowapp for permissions ["firebase.projects.get"]
+[debug] [2023-04-03T16:42:42.973Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions [none]
+[debug] [2023-04-03T16:42:42.973Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:42.973Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-03T16:42:43.757Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions 200
+[debug] [2023-04-03T16:42:43.757Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/taksowapp:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-03T16:42:43.758Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-03T16:42:43.758Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:43.759Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-03T16:42:43.759Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:44.678Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-03T16:42:44.678Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-03T16:42:44.678Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-03T16:42:44.678Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-04-03T16:42:44.678Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-04-03T16:42:44.679Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:46.333Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-04-03T16:42:46.334Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-04-03T16:42:56.344Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-03T16:42:56.344Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/taksowapp
+[debug] [2023-04-03T16:42:57.275Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-03T16:42:57.275Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/taksowapp/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-04-03T16:44:37.925Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-04-03T16:44:38.010Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-04-03T16:44:38.011Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.19.1","browserURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.tgz"},"live":{"version":"9.19","browserURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.19.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.19.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.19.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.19.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\kszyhhu\Documents\pwa-ao is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=532380227&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-03T16:45:01.073Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-04-03T16:45:01.074Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-04-03T16:45:01.460Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-04-03T16:45:01.460Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-04-03T16:45:01.467Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-04-03T16:45:01.835Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-04-03T16:45:01.835Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"krzysztofszczybylo","id":79859881,"node_id":"MDQ6VXNlcjc5ODU5ODgx","avatar_url":"https://avatars.githubusercontent.com/u/79859881?v=4","gravatar_id":"","url":"https://api.github.com/users/krzysztofszczybylo","html_url":"https://github.com/krzysztofszczybylo","followers_url":"https://api.github.com/users/krzysztofszczybylo/followers","following_url":"https://api.github.com/users/krzysztofszczybylo/following{/other_user}","gists_url":"https://api.github.com/users/krzysztofszczybylo/gists{/gist_id}","starred_url":"https://api.github.com/users/krzysztofszczybylo/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/krzysztofszczybylo/subscriptions","organizations_url":"https://api.github.com/users/krzysztofszczybylo/orgs","repos_url":"https://api.github.com/users/krzysztofszczybylo/repos","events_url":"https://api.github.com/users/krzysztofszczybylo/events{/privacy}","received_events_url":"https://api.github.com/users/krzysztofszczybylo/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":12,"public_gists":0,"followers":0,"following":0,"created_at":"2021-03-01T15:53:40Z","updated_at":"2023-03-23T15:53:05Z","private_gists":0,"total_private_repos":7,"owned_private_repos":7,"disk_usage":954,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as krzysztofszczybylo 
+[info] 
+[debug] [2023-04-03T16:46:06.303Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:06.646Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:06.646Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:08.816Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:09.068Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:09.068Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:09.572Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:09.830Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:09.830Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:10.065Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:10.324Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:10.345Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:10.345Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:10.531Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:10.551Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:10.552Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-03T16:46:10.715Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:10.790Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:10.790Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:10.900Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:10.960Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:10.961Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-03T16:46:11.177Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:11.177Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:12.100Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:12.417Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:12.417Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2023-04-03T16:46:13.137Z] >>> [apiv2][query] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key type=owner
+[debug] [2023-04-03T16:46:13.394Z] <<< [apiv2][status] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key 404
+[debug] [2023-04-03T16:46:13.394Z] <<< [apiv2][body] GET https://api.github.com/repos/krzysztofszczybylo/pwa-ao/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
